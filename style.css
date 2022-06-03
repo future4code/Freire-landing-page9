@@ -1,14 +1,79 @@
-*{
+.header {
 
-    padding: 0;
+    font-size: 15px;
     margin: 0;
+    padding: 0;
+    height: 130px;
+    background-color: white;
+}
+
+.div-link-text {
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    margin-left: 18%;
+    box-shadow: 0 1px 5px #0e0e0e;
+}
+
+.div-link {
+    background-color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header-divs {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px;
+}
+
+.botao {
+    margin-right: 10px;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    justify-content: flex-start;
 
 }
 
-.top-bar {
-    text-align: center;
-    padding: 10px 0;
-    font-size: 15px;
+.botao a {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: all .3s ease;
+}
+
+.botao a b {
+    color: black;
+
+}
+
+.botao:hover a {
+    top: -15px;
+}
+
+.botao:hover a b {
+    bottom: 0px;
+    opacity: 1;
+}
+
+* body {
+
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -51,7 +116,7 @@ header button img {
     height: auto;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
     header {
         height: 200px;
     }
