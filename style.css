@@ -103,7 +103,7 @@ header button {
     padding: 15px 20px;
     border: none;
     display: flex;
-    justify-content: center
+    justify-content: center;
     align-items: center;
     font-size: 18px;
     cursor: pointer;
