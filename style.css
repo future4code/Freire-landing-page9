@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
 
-.header {
-    font-size: 15px;
-    margin: 0;
-    padding: 0;
-    height: 130px;
-    background-color: white;
-}
+/* Aqui vai os efeitos do header e da nav-bar*/
 
 .div-link-text {
+    padding: 50px;
     padding-left: 300px;
     padding-right: 300px;
-    margin-top: 5px;
-    margin-bottom: 7px;
-    box-shadow: 0 1px 5px #0e0e0e;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .div-link {
-    background-color: white;
+    background-color: linen;
     font-size: 25px;
-    display: flex;
-    justify-content: center;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    align-items: fcenter;
 }
 
 a:link {
@@ -34,20 +36,23 @@ a:hover {
 .caca-ofertas {
     text-align: center;
     margin: 0 auto;
+    background-color: #6A4733;
 }
 
 .header-divs {
-    display: flex;
-    justify-content: space-between;
-    margin: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
 .botao {
-    margin-right: 10px;
-    width: 200px;
-    height: 100px;
-    position: relative;
-    justify-content: flex-start;
+
+    width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -55,7 +60,7 @@ a:hover {
     width: 100%;
     height: 100%;
     background-size: cover;
-    position: absolute;
+    position: relative;
     border-radius: 10px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
     transition: all .3s ease;
@@ -75,12 +80,6 @@ a:hover {
     opacity: 1;
 }
 
-* body {
-
-    padding: 0;
-    margin: 0;
-}
-
 header {
     width: 100%;
     height: 100px;
@@ -88,7 +87,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
     box-shadow: 0 1px 5px #0e0e0e;
 }
 
@@ -127,11 +125,15 @@ header button img {
     text-shadow: 0 1px 5px #0e0e0e;
 }
 
-.menu-imagens{
-    margin-left: 5%;
+/* Aqui vai toda main da pagina */
+
+
+.menu-imagens {
+    margin-left: 10%;
+    padding-right: 250px;
 }
 
-.menu-imagens img{
+.menu-imagens img {
     width: 200px;
     height: 100px;
     border-radius: 20px;
@@ -139,27 +141,28 @@ header button img {
     transition: opacity 0.5s ease-in-out;
 }
 
-.menu-imagens img:hover{
+.menu-imagens img:hover {
     opacity: 0.6;
 }
 
-.header-login{
+.header-login {
     margin-top: 5%;
     margin-left: 5%;
     font-family: 'Mr Dafoe', cursive;
 }
 
-.carrinho p{
+.carrinho p {
     margin-left: 10%;
 }
 
 @media (min-width: 1024px) {
-    header {
+    .header {
         height: 200px;
     }
 }
 
 /* barra footer */
+
 footer {
 
     width: 100%;
@@ -176,9 +179,10 @@ footer .boxs {
     min-height: 150px;
     padding: 20px;
 }
+
 /* meche no h2 do footer letras e distância */
 
-footer .boxs:nth-child(4){
+footer .boxs:nth-child(4) {
     width: 400px;
 }
 
@@ -248,16 +252,18 @@ footer .boxs:nth-child(4){
 }
 
 /* responsivo */
-@media(max-width: 950px){
+@media(max-width: 950px) {
 
-    footer{
+    footer {
         flex-direction: column;
     }
+
     footer .boxs {
         width: 100%;
         text-align: center;
     }
-    footer .boxs:nth-child(4){
+
+    footer .boxs:nth-child(4) {
         width: 100%;
     }
 }
