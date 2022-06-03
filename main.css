@@ -5,12 +5,12 @@
 .container {
     max-width: 900px;
     margin: 0 auto;
+    padding: 30px 0 50px;
 }
 
 /* Estilizacao do Main */ 
 
 .banner-topo {
-    margin-top: 100px;
     text-align: center;
 }
 

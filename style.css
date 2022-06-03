@@ -3,9 +3,6 @@
 /* Aqui vai os efeitos do header e da nav-bar*/
 
 .div-link-text {
-    padding: 50px;
-    padding-left: 300px;
-    padding-right: 300px;
     margin-top: 10px;
     margin-bottom: 20px;
     color: #fff;
@@ -37,14 +34,13 @@ a:hover {
     text-align: center;
     margin: 0 auto;
     background-color: #6A4733;
+    padding: 10px 0;
 }
 
 .header-divs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .botao {
@@ -88,6 +84,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 1px 5px #0e0e0e;
+    padding: 0 10px 0 0;
 }
 
 header img {
@@ -96,9 +93,8 @@ header img {
 }
 
 header button {
-    width: 150px;
+    width: 100px;
     box-sizing: border-box;
-    padding: 15px 20px;
     border: none;
     display: flex;
     justify-content: center;
@@ -128,14 +124,9 @@ header button img {
 /* Aqui vai toda main da pagina */
 
 
-.menu-imagens {
-    margin-left: 10%;
-    padding-right: 250px;
-}
-
 .menu-imagens img {
-    width: 200px;
-    height: 100px;
+    width: 90px;
+    height: auto;
     border-radius: 20px;
     box-shadow: 0 1px 5px #0e0e0e;
     transition: opacity 0.5s ease-in-out;
@@ -155,9 +146,34 @@ header button img {
     margin-left: 10%;
 }
 
+@media (min-width: 768px) {
+    .header-divs {
+        width: 330px;
+    }
+
+    .menu-imagens img {
+        width: 130px;
+    }
+}
+
 @media (min-width: 1024px) {
     .header {
         height: 200px;
+        padding: 0 20px;
+    }
+
+    .menu-imagens img {
+        width: 250px;
+    }
+
+
+    .header button {
+        padding: 15px 20px;
+        width: 150px;
+    }
+
+    .header-divs {
+        width: 600px;
     }
 }
 
@@ -170,6 +186,7 @@ footer {
     background-color: rosybrown;
     display: flex;
     border-top: 4px solid #a52f00;
+    justify-content: center;
 
 }
 
@@ -178,6 +195,7 @@ footer .boxs {
     width: 320px;
     min-height: 150px;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 /* meche no h2 do footer letras e distância */
@@ -224,6 +242,7 @@ footer .boxs:nth-child(4) {
     align-items: center;
     background: rgb(117, 42, 42);
     border-top: 2px solid #a52f00;
+
 }
 
 .footer h2 {
@@ -253,7 +272,9 @@ footer .boxs:nth-child(4) {
 
 /* responsivo */
 @media(max-width: 950px) {
-
+    ul {
+        padding: 0;
+    }
     footer {
         flex-direction: column;
     }
