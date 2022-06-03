@@ -1,5 +1,6 @@
-.header {
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
 
+.header {
     font-size: 15px;
     margin: 0;
     padding: 0;
@@ -12,7 +13,6 @@
     padding-right: 300px;
     margin-top: 5px;
     margin-bottom: 7px;
-    margin-left: 18%;
     box-shadow: 0 1px 5px #0e0e0e;
 }
 
@@ -29,6 +29,11 @@ a:link {
 
 a:hover {
     text-decoration: underline;
+}
+
+.caca-ofertas {
+    text-align: center;
+    margin: 0 auto;
 }
 
 .header-divs {
@@ -98,7 +103,7 @@ header button {
     padding: 15px 20px;
     border: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center
     align-items: center;
     font-size: 18px;
     cursor: pointer;
@@ -111,9 +116,41 @@ header button:hover {
     box-shadow: 0 1px 5px #0e0e0e;
 }
 
+.header-div-text {
+    font-family: 'Mr Dafoe', cursive;
+    margin-top: 5%;
+}
+
 header button img {
     width: 25px;
     height: auto;
+    text-shadow: 0 1px 5px #0e0e0e;
+}
+
+.menu-imagens{
+    margin-left: 5%;
+}
+
+.menu-imagens img{
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px #0e0e0e;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.menu-imagens img:hover{
+    opacity: 0.6;
+}
+
+.header-login{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: 'Mr Dafoe', cursive;
+}
+
+.carrinho p{
+    margin-left: 10%;
 }
 
 @media (min-width: 1024px) {
