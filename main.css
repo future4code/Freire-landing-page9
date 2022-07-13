@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 0 50px;
+}
+
+/* Estilizacao do Main */ 
+
+.banner-topo {
+    text-align: center;
+}
+
+.banner-topo img {
+    text-align: center;
+    width: 90%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.banner-topo img:hover {
+    opacity: 0.6;
+}
+
+.banners-pequenos {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr; 
+  column-gap: 10px;
+  row-gap: 25px;
+  margin-top: 20px ;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+.banners-pequenos img {
+    width: 100%;
+    border-radius: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.banners-pequenos img:hover {
+    opacity: 0.6;
+}
+
+@media screen and (min-device-width : 700px ) {
+    .banners-pequenos {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr; 
+        column-gap: 30px;
+        margin-top: 50px ;
+        padding-left: 50px;
+        padding-right: 50px;
+    }    
+    .banners-pequenos img {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
